@@ -8,37 +8,6 @@
     <link rel="icon" href="snake-tattoo-png-transparent-quality-images-snake-png-clipart-11562976467xnlgv57ovv.png">
     <title>Time</title>
 </head>
-
-<style>
-    body{
-    background-color: rgb(70,142,236);
-    font: normal 15pt Arial;
-}
-
-header{
-    color: #fff;
-    text-align: center;
-}
-
-section{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 15px;
-    width: 500px;
-    margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
-}
-
-div{
-    text-align: center;
-}
-
-footer{
-    color: #fff;
-    text-align: center;
-    font-style: italic;
-}
-</style>
 <body onload="carregar()">
     <header>
         <h1>Hora do dia</h1>
@@ -56,33 +25,6 @@ footer{
         <p>&copy; raphinha420</p>
     </footer>
     <script src="main.js">
-        function carregar(){
-
-var texto = document.getElementById('msg')
-var foto = document.getElementById('img')
-var data = new Date()
-var hora = data.getHours()
-
-if(hora >= 0 && hora < 6){
-    foto.src = 'tabem.png'
-    document.body.style.background = "#000"
-    texto.innerHTML = `Agora são ${hora} horas. Ta bem?`
-}
-else if(hora >= 6 && hora < 12){
-    foto.src = 'manha.png'
-    document.body.style.background = "#ffe668"
-    texto.innerHTML = `Agora são ${hora} horas. Bom dia`
-} else if (hora >= 12 && hora < 18){
-    foto.src = 'tarde.png'
-    document.body.style.background = "#b9846f"
-    texto.innerHTML = `Agora são ${hora} horas. Boa tarde`
-} else {
-    foto.src = 'noite.png'
-    document.body.style.background = "#0f2233"
-    texto.innerHTML = `Agora são ${hora} horas. Boa noite`
-}
-
-};
     </script>
 </body>
 </html>
