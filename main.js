@@ -4,7 +4,7 @@ function carregar(){
     var foto = document.getElementById('img')
     var data = new Date()
     var hora = data.getHours()
-
+    
     if(hora >= 0 && hora < 6){
         foto.src = 'tabem.png'
         document.body.style.background = "#000"
