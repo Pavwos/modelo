@@ -20,11 +20,11 @@ function carregar(){
             document.body.style.background = "#000"
             texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Ta bem?`
         }
-        else if(hora >= 6 && hora < 12){
+        else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
             document.body.style.background = "#ffe668"
             texto.innerHTML = `Agora são ${hora}:{minuto}:${segundo}. Bom dia`
-        } else if (hora >= 12 && hora < 18){
+        } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
             texto.innerHTML = `Agora são ${hora.padstart(2, '0')}:${minuto.padstart(2, '0')}:${segundo.padstart(2, '0')}. Boa tarde`
