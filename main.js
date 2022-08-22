@@ -7,7 +7,6 @@ function carregar(){
     var minuto = data.getMinutes()
     var segundo = data.getSeconds()
     
-    
     setInterval(function(){
          data = new Date()
          hora = data.getHours().toString().padStart(2, '0')
@@ -23,11 +22,11 @@ function carregar(){
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
             document.body.style.background = "#ffe668"
-            texto.innerHTML = `Agora são ${hora}:{minuto}:${segundo}. Bom dia`
+            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Bom dia`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
-            texto.innerHTML = `Agora são ${hora.padstart(2, '0')}:${minuto.padstart(2, '0')}:${segundo.padstart(2, '0')}. Boa tarde`
+            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Boa tarde`
         } else {
             foto.src = 'noite.png'
             document.body.style.background = "#0f2233"
