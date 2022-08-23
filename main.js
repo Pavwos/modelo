@@ -1,3 +1,7 @@
+$(window).on("load", function(){
+    $(".cssload-container").delay(1000).fadeOut(500);
+});
+
 function carregar(){
 
     var texto = document.getElementById('msg')
@@ -17,20 +21,20 @@ function carregar(){
          if(hora >= 0 && hora < 6){
             foto.src = 'tabem.png'
             document.body.style.background = "#000"
-            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Ta bem?`
+            texto.innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}.`
         }
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
             document.body.style.background = "#ffe668"
-            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Bom dia`
+            texto.innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}.`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
-            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Boa tarde`
+            texto.innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}.`
         } else {
             foto.src = 'noite.png'
             document.body.style.background = "#0f2233"
-            texto.innerHTML = `Agora são ${hora}:${minuto}:${segundo}. Boa noite`
+            texto.innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}.`
         }
     
     }, 1000)
