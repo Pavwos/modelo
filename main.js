@@ -21,20 +21,20 @@ function carregar(){
          if(hora >= 0 && hora < 6){
             foto.src = 'tabem.png'
             document.body.style.background = "#000"
-            texto.innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}.`
+            texto.innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}`
         }
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
             document.body.style.background = "#ffe668"
-            texto.innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}.`
+            texto.innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
-            texto.innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}.`
+            texto.innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}`
         } else {
             foto.src = 'noite.png'
             document.body.style.background = "#0f2233"
-            texto.innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}.`
+            texto.innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}`
         }
     
     }, 1000)
