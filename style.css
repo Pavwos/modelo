@@ -70,6 +70,26 @@ footer{
 		-moz-animation: cssload-spin 600ms infinite linear;
 }
 
+@media screen and (max-width: 537px){
+    section{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+
+    #msg{
+        margin: 5%;
+    }
+
+    #foto{
+        
+    }
+    
+    .cssload-container{
+        width: 100%;
+    }
+}
+
 
 
 @keyframes cssload-spin {
@@ -91,3 +111,4 @@ footer{
 @-moz-keyframes cssload-spin {
 	100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
 }
+
