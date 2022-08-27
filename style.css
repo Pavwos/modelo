@@ -31,7 +31,7 @@ div{
     text-align: center;
 }
 
-footer{
+footer, #more{
     color: #fff;
     text-align: center;
     font-style: italic;
@@ -40,6 +40,24 @@ footer{
 
 #msg{
     margin: 11%;
+}
+
+
+
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands{
+    font-size: 50px;
+    color: #8681e8;
+    transition: 0.2s;
+}
+
+.fa-brands:hover{
+    opacity: 60%;
 }
 
 
