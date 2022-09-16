@@ -6,6 +6,7 @@ function carregar(){
 
     var texto = document.getElementById('msg')
     var foto = document.getElementById('img')
+    var icone = document.getElementById('icon')
     var data = new Date()
     var hora = data.getHours()
     var minuto = data.getMinutes()
@@ -31,6 +32,7 @@ function carregar(){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
             texto.innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}`
+            document.icon.style.color = "#232323"
         } else {
             foto.src = 'noite.png'
             document.body.style.background = "#0f2233"
