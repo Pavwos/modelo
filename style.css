@@ -27,11 +27,16 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
 }
 
-div{
+main{
     text-align: center;
 }
 
-footer, #more{
+div{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
     color: #fff;
     text-align: center;
     font-style: italic;
@@ -41,22 +46,38 @@ footer, #more{
 #msg{
     margin: 11%;
 }
+#more{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Inter', sans-serif;
+}
 
 a{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
 }
-
-.fa-brands{
+.fa-clock{
     color: #8681e8;
     transition: 0.2s;
-    margin: 20px;
+    margin: 15px;
 }
 
-.fa-brands:hover{
+.fa-clock:hover{
+    opacity: 60%;
+}
+
+.fa-user{
+    color: #8681e8;
+    transition: 0.2s;
+    margin: 15px;
+}
+
+.fa-user:hover{
     opacity: 60%;
 }
 
