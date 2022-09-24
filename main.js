@@ -4,9 +4,9 @@ $(window).on("load", function(){
 
 function carregar(){
 
-    var texto = document.getElementById('msg')
+    var texto = document.querySelectorAll('#topo, #msg, #more, #copy')
     var foto = document.getElementById('img')
-    var icone = document.getElementById('icon')
+    var icone = document.querySelectorAll('.fa-solid')
     var data = new Date()
     var hora = data.getHours()
     var minuto = data.getMinutes()
@@ -22,23 +22,44 @@ function carregar(){
          if(hora >= 0 && hora < 6){
             foto.src = 'tabem.png'
             document.body.style.background = "#000"
-            texto.innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}`
+            icone[0].style.color = "#ffffff"
+            icone[1].style.color = "#ffffff"
+            texto[1].innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}`
         }
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
-            document.body.style.background = "#ffe668"
-            texto.innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}`
+            document.body.style.background = "#fff684"
+            for(a in icone){
+                if(icone[a].classList){
+                    icone[a].classList.add('manha')
+                }
+            }
+            for(i in texto){
+            if (texto[i].classList){
+                texto[i].classList.add('manha')
+            }   
+        }
+            texto[1].innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#b9846f"
-            texto.innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}`
-            document.icon.style.color = "#232323"
+            for(a in icone){
+                if(icone[a].classList)
+                icone[a].classList.add('tarde')
+            }
+            for(i in texto){
+                if (texto[i].classList){
+                    texto[i].classList.add('tarde')
+                }
+            }
+            texto[1].innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}`
         } else {
             foto.src = 'noite.png'
-            document.body.style.background = "#0f2233"
-            texto.innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}`
+            document.body.style.background = "#00072d"
+            icone[0].style.color = "#0a2472"
+            icone[1].style.color = "#0a2472"
+            texto[1].innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}`
         }
-    
     }, 1000)
     
     

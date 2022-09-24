@@ -47,7 +47,6 @@ footer{
     margin: 11%;
 }
 #more{
-    color: #fff;
     font-size: 25px;
     text-align: center;
     font-style: italic;
@@ -79,6 +78,14 @@ a{
 
 .fa-user:hover{
     opacity: 60%;
+}
+
+.manha{
+    color: #000;
+}
+
+.tarde{
+    color: #255674;
 }
 
 
