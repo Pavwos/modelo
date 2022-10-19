@@ -80,6 +80,16 @@ a{
     opacity: 60%;
 }
 
+.fa-arrow-up-9-1{
+    color: #8681e8;
+    transition: 0.2s;
+    margin: 15px;
+}
+
+.fa-arrow-up-9-1:hover{
+    opacity: 60%;
+}
+
 .manha{
     color: #000;
 }
