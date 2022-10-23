@@ -24,6 +24,7 @@ function carregar(){
             document.body.style.background = "#000"
             icone[0].style.color = "#ffffff"
             icone[1].style.color = "#ffffff"
+            icone[2].style.color = "#ffffff"
             texto[1].innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}`
         }
         else if(hora >= 6 && hora <= 12){
@@ -58,6 +59,7 @@ function carregar(){
             document.body.style.background = "#00072d"
             icone[0].style.color = "#0a2472"
             icone[1].style.color = "#0a2472"
+            icone[2].style.color = "#0a2472"
             texto[1].innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}`
         }
     }, 1000)
