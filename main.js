@@ -14,7 +14,7 @@ function carregar(){
     
     setInterval(function(){
          data = new Date()
-         hora = 14
+         hora = data.getHours().toString().padStart(2, '0')
          minuto = data.getMinutes().toString().padStart(2, '0')
          segundo = data.getSeconds().toString().padStart(2, '0')
          
