@@ -14,12 +14,12 @@ function carregar(){
     
     setInterval(function(){
          data = new Date()
-         hora = data.getHours().toString().padStart(2, '0')
+         hora = 14
          minuto = data.getMinutes().toString().padStart(2, '0')
          segundo = data.getSeconds().toString().padStart(2, '0')
          
 
-         if(hora >= 0 && hora < 6){
+        if(hora >= 0 && hora < 6){
             foto.src = 'tabem.png'
             document.body.style.background = "#000"
             icone[0].style.color = "#ffffff"
@@ -44,7 +44,7 @@ function carregar(){
             texto[1].innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
-            document.body.style.background = "#b9846f"
+            document.body.style.background = "#926657"
             for(a in icone){
                 if(icone[a].classList)
                 icone[a].classList.add('tarde')
