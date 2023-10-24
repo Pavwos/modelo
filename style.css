@@ -14,22 +14,30 @@ header{
     align-items: center;
     color: #a09ad6;
     font-family: 'Inter', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
-section{
-    color: #000;
+section {
+    color: #ffffff;
     display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    flex-direction: column;
-    background-color: #fff;
+    background-color: #000;
+    animation: rainbow 4s linear infinite;
     font-family: 'Inter', sans-serif;
     border-radius: 10px;
     padding: 15px;
-    width: 400px;
+    width: 50rem;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main{
+    padding: 10px;
 }
 
 
@@ -45,11 +53,6 @@ section{
     cursor: pointer;
 }
 
-main{
-    display: flex;
-    justify-content: center;
-}
-
 #label{
     display: flex;
     justify-content: center;
@@ -61,6 +64,7 @@ main{
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    width: 20rem;
 }
 
 footer{
@@ -173,6 +177,16 @@ a{
         flex-direction: column;
         align-items: center;
     }
+}
+
+@keyframes rainbow {
+    0% { border: 2px solid red; }
+        16.67% { border: 2px solid rgb(255, 165, 0); }
+        33.33% { border: 2px solid rgb(255, 255, 0); }
+        50% { border: 2px solid rgb(0, 128, 0); }
+        66.67% { border: 2px solid rgb(0, 0, 255); }
+        83.33% { border: 2px solid rgb(75, 0, 130); }
+        100% { border: 2px solid red; }
 }
 
 @keyframes cssload-spin {
