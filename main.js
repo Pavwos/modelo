@@ -10,13 +10,11 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
     var minuto = data.getMinutes()
-    var segundo = data.getSeconds()
     
     setInterval(function(){
          data = new Date()
          hora = data.getHours().toString().padStart(2, '0')
          minuto = data.getMinutes().toString().padStart(2, '0')
-         segundo = data.getSeconds().toString().padStart(2, '0')
          
 
         if(hora >= 0 && hora < 6){
@@ -26,7 +24,7 @@ function carregar(){
             icone[1].style.color = "#ffffff"
             icone[2].style.color = "#ffffff"
             icone[3].style.color = "#ffffff"
-            texto[1].innerHTML = `Boa madrugada, agora são ${hora}:${minuto}:${segundo}`
+            texto[1].innerHTML = `Boa madrugada, agora são ${hora}:${minuto}`
         }
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
@@ -41,7 +39,7 @@ function carregar(){
                 texto[i].classList.add('manha')
             }   
         }
-            texto[1].innerHTML = `Bom dia, agora são ${hora}:${minuto}:${segundo}`
+            texto[1].innerHTML = `Bom dia, agora são ${hora}:${minuto}`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
             document.body.style.background = "#926657"
@@ -54,7 +52,7 @@ function carregar(){
                     texto[i].classList.add('tarde')
                 }
             }
-            texto[1].innerHTML = `Boa tarde, agora são ${hora}:${minuto}:${segundo}`
+            texto[1].innerHTML = `Boa tarde, agora são ${hora}:${minuto}`
         } else {
             foto.src = 'noite.png'
             document.body.style.background = "#00072d"
@@ -62,7 +60,7 @@ function carregar(){
             icone[1].style.color = "#0a2472"
             icone[2].style.color = "#0a2472"
             icone[3].style.color = "#0a2472"
-            texto[1].innerHTML = `Boa noite, agora são ${hora}:${minuto}:${segundo}`
+            texto[1].innerHTML = `Boa noite, agora são ${hora}:${minuto}`
         }
     }, 1000)
     
