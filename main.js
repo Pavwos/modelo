@@ -1,5 +1,5 @@
 $(window).on("load", function(){
-    $(".cssload-container").delay(1000).fadeOut(500);
+    $(".cssload-container").delay(1069).fadeOut(690);
 });
 
 function carregar(){
@@ -28,7 +28,6 @@ function carregar(){
         }
         else if(hora >= 6 && hora <= 12){
             foto.src = 'manha.png'
-            document.body.style.background = "#fff684"
             for(a in icone){
                 if(icone[a].classList){
                     icone[a].classList.add('manha')
@@ -42,7 +41,7 @@ function carregar(){
             texto[1].innerHTML = `Bom dia, agora são ${hora}:${minuto}`
         } else if (hora >= 13 && hora < 18){
             foto.src = 'tarde.png'
-            document.body.style.background = "#926657"
+            texto[0].style.color = "#000"
             for(a in icone){
                 if(icone[a].classList)
                 icone[a].classList.add('tarde')
@@ -55,7 +54,6 @@ function carregar(){
             texto[1].innerHTML = `Boa tarde, agora são ${hora}:${minuto}`
         } else {
             foto.src = 'noite.png'
-            document.body.style.background = "#00072d"
             icone[0].style.color = "#0a2472"
             icone[1].style.color = "#0a2472"
             icone[2].style.color = "#0a2472"

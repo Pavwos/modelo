@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #a09ad6;
+    color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 5rem;
 }
@@ -20,14 +20,12 @@ header{
 section {
     color: #ffffff;
     display: flex;
-    background-color: #000;
     animation: rainbow 4s linear infinite;
     font-family: 'Inter', sans-serif;
     border-radius: 10px;
     padding: 15px;
     width: 50rem;
     margin: auto;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 363);
     align-items: center;
     flex-direction: column;
     align-content: center;
@@ -189,12 +187,12 @@ a{
 
 @keyframes rainbow {
     0% { border: 2px solid red; }
-        16.67% { border: 2px solid rgb(255, 165, 0); }
-        33.33% { border: 2px solid rgb(255, 255, 0); }
-        50% { border: 2px solid rgb(0, 128, 0); }
-        66.67% { border: 2px solid rgb(0, 0, 255); }
-        83.33% { border: 2px solid rgb(75, 0, 130); }
-        100% { border: 2px solid red; }
+    16.67% { border: 2px solid rgb(255, 165, 0); }
+    33.33% { border: 2px solid rgb(255, 255, 0); }
+    50% { border: 2px solid rgb(0, 128, 0); }
+    66.67% { border: 2px solid rgb(0, 0, 255); }
+    83.33% { border: 2px solid rgb(75, 0, 130); }
+    100% { border: 2px solid red; }
 }
 
 @keyframes cssload-spin {
