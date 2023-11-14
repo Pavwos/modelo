@@ -145,7 +145,7 @@ a{
 		-moz-animation: cssload-spin 600ms infinite linear;
 }
 
-@media screen and (max-width: 440px){   
+@media screen and (max-width: 553px){   
     header{
         display: flex;
         align-items: center;
