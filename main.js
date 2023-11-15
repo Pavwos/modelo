@@ -16,7 +16,7 @@ function carregar() {
         if (hora >= 0 && hora < 6) {
             document.body.style.background = '#000'
             icone.forEach(function (element) {
-                element.style.color = "#000";
+                element.style.color = "#fff";
             });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Boa madruga`;
