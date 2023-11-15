@@ -14,18 +14,17 @@ function carregar() {
         minuto = data.getMinutes().toString().padStart(2, '0');
 
         if (hora >= 0 && hora < 6) {
-            foto.src = 'tabem.png';
             document.body.style.background = '#000'
             icone.forEach(function (element) {
-                element.style.color = "#fff";
+                element.style.color = "#000";
             });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Boa madruga`;
         } else if (hora >= 6 && hora <= 12) {
-            document.body.style.background = '#fdc673'
-            icone.forEach(function (element) {
-                element.style.color = "#fff";
-            });
+                document.body.style.background = '#fdc673'
+                icone.forEach(function (element) {
+                    element.style.color = "#fff";
+                });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Bom dia`;
         } else if (hora >= 13 && hora < 18) {
