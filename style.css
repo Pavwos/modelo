@@ -79,46 +79,16 @@ a{
     text-decoration: none;
     font-size: 35px;
 }
-.fa-solid{
+
+#icone{
     margin: 15px;
-}
-
-.fa-clock{
-    color: #103B54;
+    color: #ffa600;
     transition: 0.2s;
 }
 
-.fa-clock:hover{
+#icone:hover{
     opacity: 60%;
 }
-
-.fa-user{
-    color: #103B54;
-    transition: 0.2s;
-}
-
-.fa-user:hover{
-    opacity: 60%;
-}
-
-.fa-arrow-up-9-1{
-    color: #103B54;
-    transition: 0.2s;
-}
-
-.fa-arrow-up-9-1:hover{
-    opacity: 60%;
-}
-
-.fa-asterisk{
-    color: #103B54;
-    transition: 0.2s;
-}
-
-.fa-asterisk:hover{
-    opacity: 60%;
-}
-
 .cssload-container {
     background-color: #282828;
     top: 0;
@@ -133,12 +103,12 @@ a{
 }
 
 .cssload-double-torus {
-	width: 49px;
-	height: 49px;
+	width: 100px;
+	height: 100px;
 	margin: 0 auto;
-	border: 4px double;
+	border: 10px double;
 	border-radius: 50%;
-	border-color:#e5ff00 #000;
+	border-color:#ffa600 #000000;
 	animation: cssload-spin 600ms infinite linear;
 		-o-animation: cssload-spin 600ms infinite linear;
 		-ms-animation: cssload-spin 600ms infinite linear;

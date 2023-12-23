@@ -5,7 +5,7 @@ $(window).on("load", function(){
 function carregar() {
     var texto = document.querySelectorAll('#msg, #bom');
     var foto = document.getElementById('img');
-    var icone = document.querySelectorAll('.fa-solid');
+    var icone = document.querySelectorAll('#icone');
     var data, hora, minuto;
 
     setInterval(function () {
@@ -16,7 +16,7 @@ function carregar() {
         if (hora >= 0 && hora < 6) {
             document.body.style.background = '#000'
             icone.forEach(function (element) {
-                element.style.color = "#fff";
+                element.style.color = "##ffa600";
             });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Boa madruga`;
