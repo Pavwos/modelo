@@ -1,52 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="snake-tattoo-png-transparent-quality-images-snake-png-clipart-11562976467xnlgv57ovv.png">
-    <title>Time</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Horas</title>
 </head>
 <body onload="carregar()">
 
-    <div class="cssload-container">
-        <div class="cssload-double-torus"></div>
+    <div class="bg-image" id="bg-image"></div>
+    <div class="loader-content">
+      <div class="loader"></div>
     </div>
-
-    <header>
-        <p class="texto-bom" id="bom">
-            bom mes
-        </p>
-        <p class="texto-msg" id="msg">
-            hora
-        </p>
-    </header>
-
-    <footer>    
-            <div id="label">
-                <p class="texto-more" id="more">More projects</p>
-                <div class="icones">
-                    <a class="link" href="https://pavwos.github.io/modelo/" title="Relógio Dinâmico">
-                        <i class="fa-solid fa-clock" id="icone"></i>
-                    </a>
-                    <a class="link" href="https://pavwos.github.io/modelo2/" title="Identificador de Idade">
-                        <i class="fa-solid fa-user" id="icone"></i>
-                    </a>
-                    <a class="link" href="https://pavwos.github.io/modelo3/" title="SuperContador">
-                        <i class="fa-solid fa-arrow-up-9-1" id="icone"></i>
-                    </a>
-                    <a class="link" href="https://pavwos.github.io/modelo4/" title="Tabuada">
-                        <i class="fa-solid fa-asterisk" id="icone"></i>
-                    </a>
-                </div>
-            </div>
-        <p class="texto-copy" id="copy">&copy;pavwos</p>
-    </footer>
-
-    <script src="main.js">
-    </script>
+    <div class="content">
+      <div class="horas">
+        <h1 id="time"></h1>
+        <p id="msg"></p>
+      </div>
+      <div class="fundo">
+        <h3 id="more">More projects</h3>
+        <div class="icons">
+          <a href="https://pavwos.github.io/nlw-project/"><i class="fa-solid fa-square-check"></i></a>
+          <a href="https://raphaberry.github.io/login-page2/"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+      </div>
+      <footer>
+        <p id="at">@pavwos</p>
+      </footer>
+    </div>
+  <script src="https://kit.fontawesome.com/9a8096ade4.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 </body>
 </html>
