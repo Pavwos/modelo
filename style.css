@@ -19,6 +19,7 @@ html, body{
   height: 100%;
   background-position: center center;
   background-size: cover;
+  
 }
 
 .content{
@@ -40,7 +41,7 @@ html, body{
 }
 
 .icons{
-  font-size: 35px;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,12 +51,12 @@ html, body{
 a{
   color: white;
   opacity: 100%;
-  transition: opacity 0.5s;
+  transition: 0.3s;
 }
 
 
 a:hover{
-  opacity: 40%;
+  opacity: 60%;
 }
 
 .horas h1, p{
@@ -68,8 +69,10 @@ a:hover{
   flex-direction: column;
   color: #ffffff;
   text-shadow: 4px 4px 5px #000;
-  margin-top: 40px;
-  gap: 10px;
+}
+
+.fundo h3{
+  font-size: 2rem;
 }
 
 footer{
@@ -78,12 +81,16 @@ footer{
   flex-direction: column;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
-  font-style: italic;
   color: #ffffff;
   text-shadow: 4px 4px 5px #000;
   position: fixed;
   bottom: 5px;
   width: 100%;
+  gap: 3rem;
+}
+
+footer p{
+  font-style: italic;
 }
 
 .loader-content{

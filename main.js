@@ -14,28 +14,28 @@ function carregar() {
         minuto = data.getMinutes().toString().padStart(2, '0');
 
         if (hora >= 0 && hora < 6) {
-            document.body.style.background = '#000'
+            document.body.style.backgroundImage = 'url(img/madrugada.jpeg)'
             icone.forEach(function (element) {
                 element.style.color = "##ffa600";
             });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Boa madruga`;
         } else if (hora >= 6 && hora <= 12) {
-                document.body.style.background = '#fdc673'
+            document.body.style.backgroundImage = 'url(img/madrugada.jpeg)'
                 icone.forEach(function (element) {
                     element.style.color = "#fff";
                 });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Bom dia`;
         } else if (hora >= 13 && hora < 18) {
-            document.body.style.background = '#de7d6a'
+            document.body.style.backgroundImage = 'url(img/madrugada.jpeg)'
             icone.forEach(function (element) {
                 element.style.color = "#fff";
             });
             texto[1].innerHTML = `${hora}:${minuto}`;
             texto[0].innerHTML = `Boa tarde`;
         } else {
-            document.body.style.background = '#020f20'
+            document.body.style.backgroundImage = 'url(img/madrugada.jpeg)'
             icone.forEach(function (element) {
                 element.style.color = "#fff";
             });

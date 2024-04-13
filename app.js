@@ -19,16 +19,16 @@ function carregar() {
 
     if (hora >= 0 && hora < 6) {
       mensagem = "Boa madrugada :)";
-      imagem = "madrugada.jpeg";
+      imagem = "./img/madrugada.jpeg";
     } else if (hora >= 6 && hora <= 12) {
       mensagem = "Bom dia :)";
-      imagem = "manha.jpeg";
+      imagem = "./img/manha.jpeg";
     } else if (hora >= 13 && hora < 18) {
       mensagem = "Boa tarde :)";
-      imagem = "tarde.jpeg";
+      imagem = "./img/tarde.jpeg";
     } else {
       mensagem = "Boa noite :)";
-      imagem = "noite.jpeg";
+      imagem = "./img/noite.jpeg";
     }
 
     fundo.style.backgroundImage = `url('${imagem}')`;
