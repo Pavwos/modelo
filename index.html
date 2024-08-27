@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <title>Horas</title>
 </head>
+
 <body onload="carregar()">
 
-    <div class="bg-image" id="bg-image"></div>
-    <div class="loader-content">
-      <div class="loader"></div>
+
+  <div class="bg-image" id="bg-image"></div>
+  <div class="loader-content">
+    <div class="loader"></div>
+  </div>
+  </div>
+  <div class="content">
+    <div class="horas">
+      <h1 id="time"></h1>
+      <p id="msg"></p>
     </div>
-    <div class="content">
-      <div class="horas">
-        <h1 id="time"></h1>
-        <p id="msg"></p>
-      </div>
-      
-      <footer>
-        <div class="fundo">
-          <h3 id="more">More projects</h3>
-          <div class="icons">
-            <a href="https://pavwos.github.io/modelo/"><i class="fa-regular fa-clock"></i></a>
-            <a href="https://pavwos.github.io/modelo5/"><i class="fa-solid fa-list"></i></i></a>
-            <a href="https://pavwos.github.io/modelo7/"><i class="fa-solid fa-cloud"></i></a>
-            <a href="https://pavwos.github.io/nlw-project/"><i class="fa-solid fa-square-check"></i></a>
-          </div>
+    <div class="boxSecond">
+      <input type="checkbox" name="seconds" id="seconds">
+      Mostrar segundos
+      </label>
+    </div>
+    <footer>
+      <div class="fundo">
+        <h3 id="more">More projects</h3>
+        <div class="icons">
+          <a href="https://pavwos.github.io/modelo/"><i class="fa-regular fa-clock"></i></a>
+          <a href="https://pavwos.github.io/modelo5/"><i class="fa-solid fa-list"></i></i></a>
+          <a href="https://pavwos.github.io/modelo7/"><i class="fa-solid fa-cloud"></i></a>
+          <a href="https://pavwos.github.io/nlw-project/"><i class="fa-solid fa-square-check"></i></a>
         </div>
-        <p id="at">@pavwos</p>
-      </footer>
-    </div>
+      </div>
+      <p id="at">@pavwos</p>
+    </footer>
+  </div>
   <script src="https://kit.fontawesome.com/9a8096ade4.js" crossorigin="anonymous"></script>
-  <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
